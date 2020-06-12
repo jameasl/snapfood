@@ -3,10 +3,25 @@ body {
     text-align: right;
     font-family: iransans;
 }
+input[type='text']::placeholder {
+    color: rgba(128, 128, 128, 0.473);
+}
 @font-face {
     font-family: iransans;
     src: url(../font/IRANSansWebFaNum-Medium.woff2);
 }
+/* buttons  */
+.btn-pink {
+    background-color: #ec0c6d;
+    color: white;
+    height: 4em; 
+    font-size: 0.9em;
+}
+.btn-pink:hover {
+    color: white;
+    background-color: #8a0840;;
+}
+/* header  */
 .header {
     background-image: url(../img/web1.jpg);
     background-size: cover;
@@ -42,6 +57,27 @@ body {
 .login > span:nth-of-type(2){
     cursor: pointer;
 }
+.lang{
+    cursor: pointer;
+}
+.header-search {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+.header-search input[type='text'] {
+    width: 9em;
+    height: 4em;
+    border-radius: 0.4em;
+    outline: none;
+    padding: 0 1em;
+    font-size: 0.9em;
+    border: none;
+    margin-left: 0.5em;
+}
+
+
+/* end of header  */
 
   @media (min-width: 576px) {
   
