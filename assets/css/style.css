@@ -23,7 +23,7 @@ input[type='text']::placeholder {
 }
 /* header  */
 .header {
-    background-image: url(../img/web1.jpg);
+    background-image: url(../img/h1.jpg);
     background-size: cover;
     padding: 2.5em;
     color: white;
@@ -63,7 +63,8 @@ input[type='text']::placeholder {
 .header-search {
     display: flex;
     justify-content: center;
-    margin-top: 5em;
+    margin: 7em 0;
+
 }
 .header-search input[type='text'] {
     width: 9em;
@@ -74,7 +75,57 @@ input[type='text']::placeholder {
     font-size: 0.9em;
     border: none;
     margin-left: 0.5em;
+    margin-bottom: 0.5em;
 }
+.header-search-title {
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.5em;
+}
+.header-form-container {
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 1em;
+    padding-bottom: 2.5em;
+    border-radius: 0.4em;
+
+}
+.header-form-container > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-shops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-shops > div {
+    margin: 0 2em;
+    cursor: pointer;
+}
+.header-shops > div > p {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.header-shops > div > div {
+    position: relative;
+
+}
+
+.header-shops > div > div > span {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    background-color: white;
+    color: #ec0c6d;
+    border-radius: 50%;
+    border: 2px solid #ec0c6d;
+    padding: 0.5em 0.3em;;
+}
+
+
 
 
 /* end of header  */
@@ -84,6 +135,9 @@ input[type='text']::placeholder {
   }
   
   @media (min-width: 768px) {
+    .header {
+        height: 100vh;
+    }
     .logo {
         width: 80px;
     }
@@ -93,6 +147,22 @@ input[type='text']::placeholder {
     .login .material-icons {
         font-size: 1.7em;
     }
+    .header-search-title {
+        font-size: 2em;
+    }
+    .header-form-container > form {
+        flex-direction: row;
+    }
+    .header-search input[type='text'] {
+        margin-bottom: 0;
+    }
+    .header-shops {
+        flex-direction: row;
+
+    }
+
+
+
 
 
   
