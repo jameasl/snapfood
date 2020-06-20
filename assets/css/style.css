@@ -27,6 +27,7 @@ input[type='text']::placeholder {
     background-size: cover;
     padding: 2.5em;
     color: white;
+    
 }
 .logo-conatiner {
     display: flex;
@@ -63,7 +64,13 @@ input[type='text']::placeholder {
 .header-search {
     display: flex;
     justify-content: center;
-    margin-top: 5em;
+    margin-top: 8em;
+    text-align: center;
+    align-items: center;
+}
+.header-search-title{
+    font-size: 1em;
+
 }
 .header-search input[type='text'] {
     width: 9em;
@@ -74,8 +81,52 @@ input[type='text']::placeholder {
     font-size: 0.9em;
     border: none;
     margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+.search-bar-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    padding-bottom: 2.5em;
+    border-radius: 0.2em;
+}
+.search-bar-container > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-shop-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
 }
 
+.header-shop-container > div > p{
+    text-align: center;
+    margin: 1em 0;
+}
+.header-shop-container > div{
+margin:0 2.5em;
+}
+
+.photo-box{
+    position: relative;  
+    
+}
+
+.photo-box > span {
+    position: absolute;
+    border:2px solid #ec0c6d ;
+    color: #ec0c6d;
+    background-color: white;
+    border-radius: 50%;
+    padding:  0.5em 0.3em;
+    bottom: 1em;
+    right: 0;
+}
 
 /* end of header  */
 
@@ -94,8 +145,18 @@ input[type='text']::placeholder {
         font-size: 1.7em;
     }
 
-
-  
+    .header-search-title{
+        font-size: 2em;
+    }
+    .search-bar-container > form{
+flex-direction: row;    
+    }
+    .header-search input[type='text'] {
+        margin-bottom: 0;
+    }
+    .header-shop-container {
+        flex-direction: row;
+    }
   }
   
   @media (min-width: 992px) {
