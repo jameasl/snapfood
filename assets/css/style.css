@@ -1,14 +1,23 @@
 body {
     direction: rtl;
     text-align: right;
-    font-family: iransans;
+    font-family: iransans-en;
 }
 input[type='text']::placeholder {
     color: rgba(128, 128, 128, 0.473);
 }
+/* text colors  */
+.text-pink {
+    color: #ec0c6d;
+
+}
 @font-face {
-    font-family: iransans;
-    src: url(../font/IRANSansWebFaNum-Medium.woff2);
+    font-family: iransans-fa;
+    src: url(../font/IRANSansWebFaNum-Medium-fa.woff2);
+}
+@font-face {
+    font-family: iransans-en;
+    src: url(../font/IRANSansWeb_Light.woff2);
 }
 /* buttons  */
 .btn-pink {
@@ -27,6 +36,7 @@ input[type='text']::placeholder {
     background-size: cover;
     padding: 2.5em;
     color: white;
+    font-family:  iransans-fa;
 }
 .logo-conatiner {
     display: flex;
@@ -125,10 +135,20 @@ input[type='text']::placeholder {
     padding: 0.5em 0.3em;;
 }
 
-
-
-
 /* end of header  */
+.description {
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.description > h2  {
+    font-size: 0.9em;
+}
+.description > p  {
+    font-size: 0.8em;
+}
+
 
   @media (min-width: 576px) {
   
@@ -136,7 +156,7 @@ input[type='text']::placeholder {
   
   @media (min-width: 768px) {
     .header {
-        height: 100vh;
+        /* height: 100vh; */
     }
     .logo {
         width: 80px;
@@ -159,6 +179,18 @@ input[type='text']::placeholder {
     .header-shops {
         flex-direction: row;
 
+    }
+
+    /* description  */
+    .description > h2  {
+        font-size: 1.8em;
+    }
+    .description {
+        padding: 5em 0;
+    }
+    .description > p  {
+        font-size: 1em;
+        line-height: 1.8em;
     }
 
 
