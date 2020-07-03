@@ -3,6 +3,7 @@ body {
     text-align: right;
     font-family: iransans-en;
 }
+
 input[type='text']::placeholder {
     color: rgba(128, 128, 128, 0.473);
 }
@@ -136,6 +137,8 @@ input[type='text']::placeholder {
 }
 
 /* end of header  */
+
+/* description */
 .description {
     padding: 2em 1em;
     display: flex;
@@ -148,6 +151,51 @@ input[type='text']::placeholder {
 .description > p  {
     font-size: 0.8em;
 }
+/* end of description */
+
+/* application */
+.application {
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+.application > .container > div {
+    background-color: white;
+    margin: 9em 2em 1em;
+    display: flex;
+}
+.application-link {
+    flex: 0 0 60%;
+    padding: 5em 3em;
+}
+.application-link > p:nth-of-type(1){
+    color: rgba(0, 0, 0, 0.603);
+    line-height: 1.6em;
+    margin: 2em 0 3em;
+}
+.application-image {
+    flex: 0 0 40%;
+
+}
+.application-image > img {
+    transform: translateY(-75px);
+
+}
+.receive-link {
+    width: 70%;
+    display: flex;
+}
+.receive-link input[type="text"] {
+    padding: 1em;
+}
+.receive-link .btn {
+   
+}
+
+
+
+
+
+
 
 
   @media (min-width: 576px) {
