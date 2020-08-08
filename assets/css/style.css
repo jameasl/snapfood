@@ -7,6 +7,10 @@ body {
 input[type='text']::placeholder {
     color: rgba(128, 128, 128, 0.473);
 }
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
 /* text colors  */
 .text-pink {
     color: #ec0c6d;
@@ -164,7 +168,6 @@ input[type='text']::placeholder {
     display: flex;
 }
 .application-link {
-    flex: 0 0 60%;
     padding: 5em 3em;
 }
 .application-link > p:nth-of-type(1){
@@ -173,23 +176,62 @@ input[type='text']::placeholder {
     margin: 2em 0 3em;
 }
 .application-image {
-    flex: 0 0 40%;
+   
 
 }
 .application-image > img {
     transform: translateY(-75px);
 
 }
+.receive-link-container {
+    width: 83%;
+}
 .receive-link {
-    width: 70%;
     display: flex;
+    align-items: center;
+    margin-bottom: 2em;
 }
 .receive-link input[type="text"] {
     padding: 1em;
+    width: 20em;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 0 0.25em 0.25em 0;
+
 }
 .receive-link .btn {
-   
+    border-radius: 0.25em 0 0 0.25em;
+    height: 60px;
+    padding: 0 2em; 
 }
+.app-store {
+    justify-content: space-between;
+}
+.app-store a {
+    height: 40px;
+    background-image: url(../img/app-categories-sprite.png);
+    padding: 0;
+    display: block;
+    width: 135px;
+    margin: 0.3em 0;
+    opacity: 0.5; 
+    transition: 0.2s;
+}
+.app-store a:hover {
+    opacity: 1; 
+}
+#google-play {
+    background-position: 0 -1455px;
+}
+#cafe-bazar {
+    background-position: 0 -1415px;
+}
+#sib-app {
+    background-position: 0 -1535px;
+}
+#snap-food {
+    background-position: 0 -1335px;
+}
+
 
 
 
